@@ -1,0 +1,42 @@
+# Operating System files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Python-specific ignored files/directories
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/                  # Your virtual environment directory
+*.env                  # Environment variables file (e.g., .env)
+.pytest_cache/         # pytest cache directory
+.coverage              # coverage.py coverage data
+*.bak                  # Backup files
+.ipynb_checkpoints/    # Jupyter Notebook checkpoints (if you use notebooks in this project)
+
+# Streamlit specific files
+.streamlit/secrets.toml # Do NOT commit sensitive information or API keys
+# .streamlit/config.toml # Uncomment if you have a custom config and don't want it versioned
+temp_data/             # Example: If your app creates a temporary directory for uploaded files
+uploaded_files/        # Example: If you save uploaded files to a specific directory
+
+# IDE specific files
+.idea/                 # PyCharm project files
+.vscode/               # VS Code configuration files
+*.sublime-project
+*.sublime-workspace
+.project
+.pydevproject
+
+# Data and Artifacts (commonly ignored, uncomment if applicable to your workflow)
+# *.csv                 # Ignore all .csv files (use with caution, might ignore source data)
+# *.json                # Ignore all .json files (use with caution, might ignore source data)
+# *.xlsx                # Ignore all .xlsx files (use with caution, might ignore source data)
+# *.xls                 # Ignore all .xls files (use with caution, might ignore source data)
+# data/                 # Ignore an entire 'data' directory if it contains large/generated datasets
+*.log                  # Log files
+*.tmp                  # Temporary files
+*~                     # Emacs/Vim temporary files
